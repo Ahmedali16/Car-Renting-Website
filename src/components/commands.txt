@@ -1,0 +1,21 @@
+npx create-react-app my-chakra-app --template typescript
+ for creatinng project
+
+
+
+
+
+
+
+ cd my-chakra-app
+npm install @chakra-ui/react
+npm intsall @chakra-ui/icons
+
+
+
+
+
+
+
+
+
