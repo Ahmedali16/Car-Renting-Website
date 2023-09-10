@@ -6,32 +6,32 @@ function PicCar() {
   return (
    <>
   
-   <Box mx={20} mt={[10,10,-50]} rounded={10} p={5} boxShadow={"lg"} bg={"gray.200"} >
+   <Box mx={20} mt={[10,10,-50]} rounded={10} p={5} boxShadow={"lg"} bg={"gray.100"} >
    <Flex  alignItems={"center"}  flexDirection={["column","column","row"]}>
-    <Box flex={1} m={1}>
+    <Box flex={1} m={1} >
 
       <Text fontWeight={400} m={1}>Pick up location</Text>
-      <Input placeholder='Enter location' bg={"white"} size='md' />
+      <Input placeholder='Enter location' bg={"white"} size='md' boxShadow={"lg"} />
     </Box>
     <Box flex={1} m={1}>
 
 <Text m={1}>Pick up date</Text>
-<Input placeholder='Enter date' bg={"white"} size='md'  />
+<Input placeholder='Enter date' bg={"white"} size='md'  boxShadow={"lg"}/>
 </Box>
 <Box flex={1} m={1}>
 
 <Text m={1}>Drop off location</Text>
-<Input placeholder='Enter location' bg={"white"} size='md' />
+<Input placeholder='Enter location' bg={"white"} size='md' boxShadow={"lg"}/>
 </Box>
 <Box flex={1} m={1}>
 
 <Text m={1}>Drop off date</Text>
-<Input placeholder='Enter date' bg={"white"} size='md' />
+<Input placeholder='Enter date' bg={"white"} size='md' boxShadow={"lg"}/>
 </Box>
 <Box >
 <Flex  justifyContent={"center"} alignItems={"center"}>
 <Button  rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='solid' m={2}>
-    Call us
+   <Text> Call us</Text>
   </Button>
 </Flex>
 </Box>

@@ -1,69 +1,69 @@
-import { ArrowForwardIcon } from "@chakra-ui/icons";
-import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
-import React from "react";
-import tesla from '../images/logo/T.png'; 
-import honda from  "../images/logo/Honda svg.png"
-import toyota from  "../images/logo/toyota.png"
-import hyundai from  "../images/logo/hyundai.png"
-import nissan from  "../images/logo/Nissan USA svg.png"
-import kia from  "../images/logo/Kia svg.png"
-import volswagan from  "../images/logo/Volkswagen USA svg.png"
-import audi from  "../images/logo/Audi svg.png"
+// import { ArrowForwardIcon } from "@chakra-ui/icons";
+// import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
+// import React from "react";
+// import tesla from '../images/logo/T.png'; 
+// import honda from  "../images/logo/Honda svg.png"
+// import toyota from  "../images/logo/toyota.png"
+// import hyundai from  "../images/logo/hyundai.png"
+// import nissan from  "../images/logo/Nissan USA svg.png"
+// import kia from  "../images/logo/Kia svg.png"
+// import volswagan from  "../images/logo/Volkswagen USA svg.png"
+// import audi from  "../images/logo/Audi svg.png"
 
 
-function Brands() {
-  return (
-    <>
+// function Brands() {
+//   return (
+//     <>
      
-      <Box mx={20} mt={"20"}>
-        <Flex justifyContent={"space-between"} >
-          <Text fontWeight={700}>Rent by Brands</Text>
-          <Link fontWeight={700} >view all <span style={{fontWeight:"700" }}><ArrowForwardIcon/></span></Link>
-        </Flex>
-        <Flex flexDirection={"column"}>
-        <Flex justifyContent={"center"} flexDirection={["column","column","row"]} alignItems={"center"} mt={5}>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={tesla} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> Tesla</Text>
-</Box>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={honda} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> Honda</Text>
-</Box>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={toyota} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> Toyota</Text>
-</Box>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={nissan} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> Nissan</Text>
-</Box>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={hyundai} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> Hyundai</Text>
-</Box>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={kia} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> Kia</Text>
-</Box>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={audi} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> Audi</Text>
-</Box>
-<Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
-    <Image src={volswagan} height={"10"} width={"10"}></Image>
-    <Text textAlign={"center"}> VolsWagn</Text>
-</Box>
+//       <Box mx={20} mt={"20"}>
+//         <Flex justifyContent={"space-between"} >
+//           <Text fontWeight={700}>Rent by Brands</Text>
+//           <Link fontWeight={700} >view all <span style={{fontWeight:"700" }}><ArrowForwardIcon/></span></Link>
+//         </Flex>
+//         <Flex flexDirection={"column"}>
+//         <Flex justifyContent={"center"} flexDirection={["column","column","row"]} alignItems={"center"} mt={5}>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={tesla} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> Tesla</Text>
+// </Box>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={honda} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> Honda</Text>
+// </Box>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={toyota} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> Toyota</Text>
+// </Box>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={nissan} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> Nissan</Text>
+// </Box>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={hyundai} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> Hyundai</Text>
+// </Box>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={kia} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> Kia</Text>
+// </Box>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={audi} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> Audi</Text>
+// </Box>
+// <Box bg={"gray.200"} p={7} m={2} height={"28"} width={"32"} borderRadius={8}>
+//     <Image src={volswagan} height={"10"} width={"10"}></Image>
+//     <Text textAlign={"center"}> VolsWagn</Text>
+// </Box>
 
-        </Flex>
-        </Flex>
-      </Box>
+//         </Flex>
+//         </Flex>
+//       </Box>
      
-    </>
-  );
-}
+//     </>
+//   );
+// }
 
-export default Brands;
+// export default Brands;
 // import { ArrowForwardIcon } from "@chakra-ui/icons";
 // import { Box, Flex, Image, Link, Text, Collapse } from "@chakra-ui/react";
 // import React, { useState } from "react";
@@ -143,3 +143,136 @@ export default Brands;
 
 
 
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
+import React from "react";
+import tesla from '../images/logo/T.png'; 
+import honda from  "../images/logo/Honda svg.png"
+import toyota from  "../images/logo/toyota.png"
+import hyundai from  "../images/logo/hyundai.png"
+import nissan from  "../images/logo/Nissan USA svg.png"
+import kia from  "../images/logo/Kia svg.png"
+import volswagan from  "../images/logo/Volkswagen USA svg.png"
+import audi from  "../images/logo/Audi svg.png"
+
+
+function Brands() {
+  return (
+    <>
+      <Box mx={[3, 10, 20]} mt={"20"}>
+        <Flex justifyContent={"space-between"} mx={5}>
+          <Text fontWeight={700}>Rent by Brands</Text>
+          <Link fontWeight={700}>
+            view all{" "}
+            <span style={{ fontWeight: "700" }}>
+              <ArrowForwardIcon />
+            </span>
+          </Link>
+        </Flex>
+        <Flex flexDirection={"column"}>
+          <Flex
+          justifyContent={"center"}
+            // justifyContent={"center"}
+            flexDirection={["row"]}
+            flexWrap={"wrap"}
+            // alignItems={"center"}
+            mt={5}
+            
+          >
+            <Box
+            
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+              <Flex justifyContent={"center"}><Image src={tesla} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> Tesla</Text>
+            </Box>
+            <Box
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+              <Flex justifyContent={"center"}><Image src={honda} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> Honda</Text>
+            </Box>
+            <Box
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+              <Flex justifyContent={"center"}><Image src={toyota} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> Toyota</Text>
+            </Box>
+            <Box
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+             <Flex justifyContent={"center"}> <Image src={nissan} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> Nissan</Text>
+            </Box>
+            <Box
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+              <Flex justifyContent={"center"}><Image src={hyundai} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> Hyundai</Text>
+            </Box>
+            <Box
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+           <Flex justifyContent={"center"}>   <Image src={kia} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> Kia</Text>
+            </Box>
+            <Box
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+           <Flex justifyContent={"center"}>   <Image src={audi} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> Audi</Text>
+            </Box>
+            <Box
+              bg={"#F5F5F5"}
+              p={7}
+              m={2}
+              height={"28"}
+              width={"32"}
+              borderRadius={8}
+            >
+              <Flex justifyContent={"center"}><Image src={volswagan} height={"10"} width={"10"}></Image></Flex>
+              <Text textAlign={"center"}> VolsWagn</Text>
+            </Box>
+          </Flex>
+        </Flex>
+      </Box>
+    </>
+  );
+}
+
+export default Brands;
