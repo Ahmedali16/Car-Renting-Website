@@ -35,11 +35,12 @@ function CarCard() {
             experience.
           </Text>
         </Box>
-        <Box>
+        {/* <Box> */}
           <Flex justifyContent={"center"}>
-            {/* <Flex justifyContent={}> */}
+            <Flex flexDirection={["column","column","row"]}>
+              {/* <Box flex={1}> */}
             <Button
-              m={5}
+              p={5} m={5}
               borderRadius={10}
               bg="white"
               color="black"
@@ -48,7 +49,7 @@ function CarCard() {
               Popular Car
             </Button>
             <Button
-              m={5}
+              p={5} m={5}
               borderRadius={10}
               bg="white"
               color="black"
@@ -56,8 +57,11 @@ function CarCard() {
             >
               Luxury Car
             </Button>
+            {/* </Box> */}
+      
+            {/* <Box flex={1}> */}
             <Button
-              m={5}
+              p={5} m={5}
               borderRadius={10}
               bg="white"
               color="black"
@@ -66,7 +70,7 @@ function CarCard() {
               Family Car
             </Button>
             <Button
-              m={5}
+             p={5} m={5}
               borderRadius={10}
               bg="white"
               color="black"
@@ -74,9 +78,10 @@ function CarCard() {
             >
               Off-road Car
             </Button>
+            {/* </Box> */}
+          
           </Flex>
-          {/* </Flex> */}
-        </Box>
+          </Flex>
         <Box p={10}>
           <Flex justifyContent={"center"} flexDirection={["column","column","row"]}>
             <Card maxW="sm" m={5} _hover={{ boxShadow:"lg" }} boxShadow={"md"} mx={"auto"}>

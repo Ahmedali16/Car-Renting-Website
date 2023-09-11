@@ -5,10 +5,10 @@ import appStore from "../images/footer/apple.png";
 function Footerr() {
   return (
     <>
-      <Box bg={"black"} color={"white"} my={10} p={20}>
+      <Box bg={"black"} color={"white"} my={10} p={[10,10,20]}>
         <Box>
           <Flex flexDirection={["column" ,"column","row"]}>
-            <Box flex={1} mx={10} p={5}>
+            <Box flex={1} >
               <Text fontSize={"2xl"} fontWeight={"bold"}>
                 Download our mobile app ⚡️
               </Text>

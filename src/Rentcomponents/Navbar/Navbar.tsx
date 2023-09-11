@@ -72,11 +72,13 @@
 //   );
 // };
 // export default NavBar;
+import { Link } from 'react-router-dom';
+
 import {
     Text,
     Box,
     Flex,
-    Link,
+   
     Button,
     Drawer,
     DrawerBody,
@@ -98,50 +100,50 @@ import {
       return (
         <>
           {/* <Box p={3} _hover={{ bgColor: "gray.200" }} borderRadius={5} > */}
-            <Link
-           m={2}
+          <Box    m={2}
            p={1}
            borderRadius={6}
            display="flex"
            alignItems="center"
            justifyContent="center"
-           _hover={{ bgColor: "teal", color: "white" }}
-            >
+           _hover={{ bgColor: "teal", color: "white" }}>
+            <Link to="/">
               Home
             </Link>
-            <Link
-             m={2}
+            </Box>
+            <Box    m={2}
              p={1}
              borderRadius={6}
              display="flex"
              alignItems="center"
              justifyContent="center"
-             _hover={{ bgColor: "teal", color: "white" }}
-            >
+             _hover={{ bgColor: "teal", color: "white" }}>
+            <Link to="/About" >
               About
             </Link>
-            <Link
-         m={2}
+            </Box>
+            <Box  m={2}
          p={1}
          borderRadius={6}
          display="flex"
          alignItems="center"
          justifyContent="center"
-         _hover={{ bgColor: "teal", color: "white" }}
-            >
+         _hover={{ bgColor: "teal", color: "white" }}>
+            <Link to="/Contact">
               Contact
             </Link>
-            <Link
-        m={2}
+            </Box>
+            <Box   m={2}
         p={1}
         borderRadius={6}
         display="flex"
         alignItems="center"
         justifyContent="center"
-        _hover={{ bgColor: "teal", color: "white" }}
-      >
+        _hover={{ bgColor: "teal", color: "white" }}>
+            <Link to="/HowItWorks">
         How it works
       </Link>
+      </Box>
           {/* </Box> */}
         </>
       );
@@ -169,7 +171,8 @@ import {
               <NavLinks />
             </Flex>
             <Flex>
-              <Link m={3}>
+              <Box  m={3}>
+              <Link to="">
                 <Flex>
                 <Stack direction="row" spacing={4} align="center">
                   <Flex alignItems="center"  >
@@ -182,6 +185,7 @@ import {
                 </Stack>
                 </Flex>
               </Link>
+              </Box>
               <Icon
                 as={HamburgerIcon}
                 onClick={SideBar}

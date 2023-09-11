@@ -1,31 +1,52 @@
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Footer from './Pages/Footer';
+// import HomePage from './Pages/HomePage';
+// import HowItWorks from './Pages/HowItWorks';
+// import Navbar from './Pages/Navbar';
 
-import Customer from './Pages/Customer';
+// function App() {
+//   return (
+//     <Router>
+//       <div className="App">
+//         <Navbar />
+//         <Routes>
+//           <Routes path='/HomePage' element={<HomePage/>}></Routes>
+//           <Route path='/HowItWorks' element={<HowItWorks />} />
+//         </Routes>
+//         {/* <HomePage /> */}
+//         <Footer />
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Pages/Footer';
-import Services from './Pages/Services';
-import Work from './Pages/Work';
-import Card from './Rentcomponents/CarRentCard/Card';
-import Banner from './Rentcomponents/Home/Banner';
-import NavBar from './Rentcomponents/Navbar/Navbar';
-import PicCar from './Rentcomponents/PicCars/PicCar';
-import Brands from './Rentcomponents/RentBrands/Brands';
+import HomePage from './Pages/HomePage';
+import HowItWorks from './Pages/HowItWorks';
+import Navbar from './Pages/Navbar';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+
 function App() {
   return (
-    <div className="App">
- 
- <NavBar/>
- <Banner/>
- <PicCar/>
- <Brands/>
-<Card/>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<HomePage />} /> {/* Default route */}
+          <Route path='/HowItWorks' element={<HowItWorks />} />
+          <Route path='/About' element={<About />}></Route>
+          <Route path='/Contact' element={<Contact/>}></Route>
+        </Routes>
+        <Footer />
 
-{/* from pages */}
-<Work/>
-<Services/>
-<Customer/>
-<Footer/>
-
-    </div>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
