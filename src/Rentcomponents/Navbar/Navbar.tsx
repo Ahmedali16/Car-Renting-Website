@@ -156,7 +156,7 @@ import {
   
     return (
       <>
-        <Box  bg={"gray.100"}>
+        <Box zIndex={20} top={0}  bg={"gray.100"} position={"fixed"} w={"full"}>
           <Flex mx={5} p={3} justifyContent={"space-between"}>
             <Flex
               fontFamily={"sans-serif"}

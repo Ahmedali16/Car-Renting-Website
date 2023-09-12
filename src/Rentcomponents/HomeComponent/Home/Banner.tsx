@@ -10,7 +10,8 @@ import carpicBanner from '../images/lcruiser.png';
 function Banner() {
   return (
    <>
-    <Flex bg={"#0F0F0F"}  flexDirection={["column", "column", "row"]}>
+   <Box mt={20}>
+   <Flex bg={"#0F0F0F"}   flexDirection={["column", "column", "row"]}>
         <Box flex="1">
           <Flex flexDirection={"column"}>
             <Text
@@ -30,7 +31,9 @@ function Banner() {
         <Box flex="1" mx="auto" my="auto">
           <Image src={carpicBanner}  alt="Car Banner" bg="transparent" />
         </Box>
-      </Flex></>
+      </Flex>
+   </Box>
+      </>
   )
 }
 
