@@ -18,7 +18,7 @@ function Banner() {
              color={"white"}
               fontSize={50}
               
-              p={20}
+              p={["5","7","18"]}
               fontWeight="bold"
             >
              Find ,book ,rental car in <span>Easy</span> steps
