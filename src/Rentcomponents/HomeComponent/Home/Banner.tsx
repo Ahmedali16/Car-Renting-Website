@@ -17,7 +17,7 @@ function Banner() {
             <Text
              color={"white"}
               fontSize={50}
-              
+              mt={5}
               p={["5","7","18"]}
               fontWeight="bold"
             >
