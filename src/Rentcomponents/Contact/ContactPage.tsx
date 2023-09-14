@@ -42,12 +42,24 @@ function ContactPage() {
           <Flex mt={2}   flexDirection={["column","column","row"]}>
             
          
-          <Input  p={2} mx={2} w={"xs"} mt={4} boxShadow={"lg"} variant='flushed' placeholder='Enter First Name' />
-          <Input p={2} mx={2} w={"xs"} mt={4} boxShadow={"lg"} variant='flushed' placeholder='Enter Last Name' />
+          <Flex p={2}  mt={4} flexDirection={"column"}>
+              <Text fontSize={"sm"}>First Name</Text>
+          <Input p={2}  boxShadow={"lg"} w={"xs"} variant='flushed' placeholder='e.g: Ahmed' />
+          </Flex>
+          <Flex p={2}  mt={4} flexDirection={"column"}>
+              <Text fontSize={"sm"}>Last Name</Text>
+          <Input  p={2} boxShadow={"lg"} w={"xs"} variant='flushed' placeholder='e.g: ali' />
+          </Flex>
           </Flex>
           <Flex  my={2} flexDirection={["column","column","row"]}>
-          <Input p={2} mx={2}mt={4}  boxShadow={"lg"} w={"xs"} variant='flushed' placeholder='Email' />
-          <Input p={2} mx={2} mt={4}  boxShadow={"lg"} w={"xs"} variant='flushed' placeholder='Phone Number' />
+            <Flex p={2}  mt={4} flexDirection={"column"}>
+              <Text fontSize={"sm"}>Email</Text>
+          <Input  p={2} boxShadow={"lg"} w={"xs"} variant='flushed' placeholder='e.g: ahmed@gmail.com' />
+          </Flex>
+          <Flex p={2}  mt={4} flexDirection={"column"}>
+              <Text fontSize={"sm"}>Phone no</Text>
+          <Input p={2}  boxShadow={"lg"} w={"xs"} variant='flushed' placeholder='e.g: 030000000' />
+          </Flex>
           </Flex>
           <Box mt={5}><Text fontWeight={"bold"} >Select Time Period</Text>
           <Flex flexDirection={["column","column","row"]}>
@@ -58,7 +70,7 @@ function ContactPage() {
           </Flex>
           </Box>
           
-          <Box my={[6,3]}> <Text fontSize={"sm"} >Enter Text here</Text><Textarea id='text' placeholder='Enter your text here'></Textarea></Box>
+          <Box my={[6,3]}> <Text fontSize={"sm"} >Message</Text><Textarea id='text' placeholder='Enter your text here'></Textarea></Box>
           <Box><Button bg={"black"} color={"white"} _hover={{bg:"gray" , color:"black"}}>Send </Button></Box>
       </Flex>
      </Box>
