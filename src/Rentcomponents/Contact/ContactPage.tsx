@@ -14,7 +14,7 @@ function ContactPage() {
      </Box>
     
     <Flex mt={2}  flexDirection={["column-reverse","column-reverse","column-reverse","row"]} justifyContent={"center"}>
-      <Box  bgColor={"black"} color={"white"} ml={7}  p={[4,6,7]} borderRadius={10}>
+      <Box  bgColor={"black"} color={"white"}  p={[4,6,7]} borderRadius={10}>
       <Flex flexDirection={"column"}>
           <Text fontSize={"2xl"} fontWeight={"bold"} py={3}>
           Contact Information
