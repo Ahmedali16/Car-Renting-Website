@@ -39,7 +39,7 @@ function Benefits() {
             </Flex>
 
             <Flex mx={"auto"}>
-              <Image src={ease} boxSize={"44"}></Image>
+              <Image src={ease}boxSize={"44"}></Image>
             </Flex>
           </Flex>
         </Box>
