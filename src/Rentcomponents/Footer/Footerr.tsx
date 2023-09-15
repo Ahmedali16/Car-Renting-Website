@@ -2,6 +2,7 @@ import { Box, Button, Flex, HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import playstore from "../images/footer/playstore.png";
 import appStore from "../images/footer/apple.png";
+import ServicesBenefits from "../HomeComponent/ServicesAndBenefits/ServicesBenefits";
 function Footerr() {
   return (
     <>
@@ -62,6 +63,7 @@ function Footerr() {
         <hr  style={{color:"gray"}}/>
         <Box>Ahmed rent</Box>
       </Box>
+      
     </>
   );
 }
