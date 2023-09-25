@@ -17,7 +17,7 @@ import React from 'react'
           <ModalContent>
             <ModalCloseButton />
             <ModalBody>
-                <Flex justifyContent={"center"} alignItems={"center"}> 
+                <Flex justifyContent={"center"} alignItems={"center"} mx={4}> 
                     <Icon as={CheckIcon} color={"green"} fontSize={34} mx={2}></Icon>
               <Text fontSize={34}>Thankyou</Text>
               </Flex>

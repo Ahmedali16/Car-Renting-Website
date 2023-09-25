@@ -52,7 +52,7 @@ function BookYourPopUp() {
         onClose={onClose}
       >
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent mx={4}>
           <ModalHeader>Book Your Car</ModalHeader>
           <ModalCloseButton />
           <ModalBody pb={6}>
