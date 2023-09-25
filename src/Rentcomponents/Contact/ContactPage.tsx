@@ -19,8 +19,14 @@ import { FaFacebookF } from "react-icons/fa";
 import ServicesBenefits from "../HomeComponent/ServicesAndBenefits/ServicesBenefits";
 import HowItWorks from "../../Pages/HowItWorks";
 import Working from "../HomeComponent/HowWork.tsx/Working";
+import { Formik ,Form,Field,ErrorMessage} from "formik";
+import * as yup from 'yup'
 
 function ContactPage() {
+  const validationSchema=yup.object({
+
+    name:yup.string().required("Enter name").min(2,"too short").max(9,"maxmim")
+  })
   return (
     <>
       <Box mt={["36", 32, 24]}>
@@ -71,22 +77,36 @@ function ContactPage() {
               </Flex>
             </Flex>
           </Box>
+          <Formik validationSchema={validationSchema} initialValues={{name:"",LastName:"",Email:"",PhoneNo:"",TimeDuration:""}} onSubmit={(values)=>{
+                    console.log(values)
+                  }} >
+                    {({values})=>(
+                      
+                      <Form>
+                        <h1>{values.Email}</h1>
           <Box>
             <Flex p={10} flexDirection={"column"} boxShadow={"lg"}>
               <Flex mt={2} flexDirection={["column", "column", "row"]}>
                 <Flex p={2} mt={4} flexDirection={"column"}>
                   <Text fontSize={"sm"}>First Name</Text>
-                  <Input
+               
+                      {/* <Field name="name" type="text"></Field> */}
+                  <Field
+                  // as="textarea"
+                  name="name"
                     p={2}
                     boxShadow={"lg"}
                     w={["auto", "auto", "xs"]}
                     variant="flushed"
                     placeholder="e.g: Ahmed"
                   />
+                  <ErrorMessage name="name"/>
+                  
                 </Flex>
                 <Flex p={2} mt={4} flexDirection={"column"}>
                   <Text fontSize={"sm"}>Last Name</Text>
-                  <Input
+                  <Field
+                  name="LastName"
                     p={2}
                     boxShadow={"lg"}
                     w={["auto", "auto", "xs"]}
@@ -98,7 +118,8 @@ function ContactPage() {
               <Flex my={2} flexDirection={["column", "column", "row"]}>
                 <Flex p={2} mt={4} flexDirection={"column"}>
                   <Text fontSize={"sm"}>Email</Text>
-                  <Input
+                  <Field
+                  name="Email"
                     p={2}
                     boxShadow={"lg"}
                     w={["auto", "auto", "xs"]}
@@ -108,7 +129,8 @@ function ContactPage() {
                 </Flex>
                 <Flex p={2} mt={4} flexDirection={"column"}>
                   <Text fontSize={"sm"}>Phone no</Text>
-                  <Input
+                  <Field
+                  name="PhoneNo"
                     p={2}
                     boxShadow={"lg"}
                     w={["auto", "auto", "xs"]}
@@ -122,19 +144,19 @@ function ContactPage() {
                 <Flex flexDirection={["column", "column", "row"]}>
                   <Flex>
                     {" "}
-                    <Checkbox mt={4} mx={2} defaultChecked>
+                    <Checkbox mt={4} mx={2} defaultChecked name="TimeDuration" value="For a day">
                       For a day
                     </Checkbox>
-                    <Checkbox mx={2} mt={4}>
+                    <Checkbox mx={2} mt={4} name="TimeDuration" value="For a week">
                       For a week
                     </Checkbox>
                   </Flex>
                   <Flex>
                     {" "}
-                    <Checkbox mx={2} mt={4}>
+                    <Checkbox mx={2} mt={4} name="TimeDuration" value="For a month">
                       For a month
                     </Checkbox>
-                    <Checkbox mx={2} mt={4}>
+                    <Checkbox mx={2} mt={4} name="TimeDuration" value="other">
                       other
                     </Checkbox>
                   </Flex>
@@ -151,6 +173,7 @@ function ContactPage() {
               </Box>
               <Box>
                 <Button
+                type="submit"
                   bg={"black"}
                   color={"white"}
                   _hover={{ bg: "gray", color: "black" }}
@@ -160,7 +183,12 @@ function ContactPage() {
               </Box>
             </Flex>
           </Box>
+          <Field ></Field>
+          </Form>
+          )}
+                  </Formik>
         </Flex>
+        
         <Flex justifyContent={"center"} m={5}>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.240821845229!2d74.401817274527!3d31.57244329456949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905556f40f311%3A0xc3bc6369c81a44e3!2sFateh%20Garh%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1694692399158!5m2!1sen!2s"

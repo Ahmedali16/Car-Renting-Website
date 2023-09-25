@@ -1,44 +1,69 @@
-import React from 'react'
-import { Box, Text, Flex, Image, Container, VStack } from '@chakra-ui/react'
-import mainpic from '../HomeComponent/images/lcruiser.png'
+import React from "react";
+import Slider from './Slider/Slider'
+import { Box, Text, Flex, Image, Container, VStack } from "@chakra-ui/react";
+import mainpic from "../About/images/lc.png";
+import Rides from "./Rides";
+// import CarTime from './images/CarTime.p'
+const CarTime = require("./images/Car3.mp4") 
 function AboutPage() {
+
+  const RidesData = [
+    {
+      Rides: "1947",
+      Cars: 390,
+      "PickupLocation": "130+",
+      "HappyCustomers": "1880+",
+    },
+  ];
   return (
     <>
-    <Box
-    color={"black"}
-      backgroundImage="linear-gradient(135deg, teal.400 50%, white 50%)"
-      height="80vh"
-    >
-      <Container maxW="container.xl">
-        <Flex p={4} justifyContent="space-between" alignItems="center">
-          <Image src="/your-logo.png" alt="Company Logo" width="100px" />
-          <Text fontSize="2xl" fontWeight="bold" >
-            About Us
-          </Text>
-          <Box />
-        </Flex>
-
-        <VStack spacing={8} mt={20} alignItems="center">
-      <Flex>    <Box><Image
-            src={mainpic}
-            height={"300px"}
-            w={"400px"}
-            alt="Car Image"
-         
-            borderRadius="full"
-          /></Box>
-       
-        <Box alignContent={"center"} alignItems={"center"}>
-        <Text fontSize="3xl" fontWeight="bold" >
-            Welcome to Rent-A-Car  </Text>
-          <Text fontSize="xl">
-          Best leading company for providing best maaintaied vehicles to our customers with best rating in safety
-          </Text></Box></Flex>
-        </VStack>
-      </Container>
+    <Box position={"relative"}> 
+  
+    <video src={CarTime} autoPlay loop muted ></video>
+  
+  <Box position={"absolute"}  color={"white"} fontSize={"2xl"}>
+    <Text>Hi i am bout</Text>
+  </Box>
+  <Rides data={RidesData} />
     </Box>
+      <Box
+      borderRadius={10}
+      shadow={"xl"}
+        color={"black"}
+      
+        backgroundImage="linear-gradient(135deg, teal.300 50%, white 50%)"
+   
+        mt={20}
+      >
+      
+            <Flex  flexDirection={["column", "column", "row"]}>
+        <Box flex="1">
+          <Flex flexDirection={"column"}>
+            <Text
+         
+              fontSize={48}
+              mt={5}
+              p={["5","7","18"]}
+              fontWeight="bold"
+            >
+            Afordable Rental Company. <span style={{fontSize:"30px" ,color:"rainbowGradiant"}}>Top Safety, Comfortables</span> 
+             <Text   fontSize={16} fontWeight={"normal"}>
+              Rent a car at the best prices compared to all over the town
+            </Text>
+            </Text>
+          </Flex>
+        </Box>
+        <Box flex="1" mx="auto" my="auto">
+          <Image style={{ transform: "scaleX(-1)" }} src={mainpic}  alt="Car Banner" bg="transparent" />
+        </Box>
+      </Flex>
+
+      </Box>
+
+      
+      <Slider/>
     </>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;
