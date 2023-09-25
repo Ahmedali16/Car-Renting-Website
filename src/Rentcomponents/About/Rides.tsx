@@ -7,7 +7,7 @@ function Rides(props:any) {
     // const {Rides}  = data
   return (
     <>
-    <Box my={10} color={"white"} p={2} shadow={"lg"}    backgroundImage="linear-gradient(135deg, black 90%, white 10%)">
+    <Box my={10} color={"white"} p={2} shadow={"lg"}    bgColor={"black"}>
    <Flex justifyContent={"space-evenly"}  >
     <Box boxShadow={"md"} alignContent={"center"} alignItems={"center"} p={5}>
         <Text fontSize={["20","18","20"]}>Rides</Text>

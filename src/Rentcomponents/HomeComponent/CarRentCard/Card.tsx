@@ -38,7 +38,7 @@ function CarCard() {
         {/* <Box> */}
           <Flex justifyContent={"center"}>
             <Flex flexDirection={["column","column","row"]}>
-              {/* <Box flex={1}> */}
+
             <Button
               p={5} m={5}
               borderRadius={10}

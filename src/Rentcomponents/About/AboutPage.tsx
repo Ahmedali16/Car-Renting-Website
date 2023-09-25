@@ -17,13 +17,9 @@ function AboutPage() {
   ];
   return (
     <>
-    <Box position={"relative"}> 
+    <Box> 
   
-    <video src={CarTime} autoPlay loop muted ></video>
-  
-  <Box position={"absolute"}  color={"white"} fontSize={"2xl"}>
-    <Text>Hi i am bout</Text>
-  </Box>
+    <video src={CarTime} style={{ width: "100%"}} autoPlay loop muted></video>
   <Rides data={RidesData} />
     </Box>
       <Box
@@ -61,7 +57,7 @@ function AboutPage() {
       </Box>
 
       
-      <Slider/>
+      {/* <Slider/> */}
     </>
   );
 }

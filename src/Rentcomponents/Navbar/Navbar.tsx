@@ -92,6 +92,7 @@ import {
   import React, { useState } from "react";
   import { useDisclosure } from "@chakra-ui/react";
   import {MdCarRental} from "react-icons/md"
+import BookYourPopUp from './BookYourPopUp';
   
   
   const NavBar: React.FC = () => {
@@ -176,10 +177,7 @@ import {
                 <Flex>
                 <Stack direction="row" spacing={4} align="center">
                   <Flex alignItems="center"  >
-                    <Button colorScheme="teal" color={"white"} size={"sm"} >
-                    <Icon boxSize={7} as={MdCarRental}></Icon>
-                    <Text  alignItems={"center"} style={{textDecoration:"none"}}>Book your</Text>
-                    </Button>
+                   <BookYourPopUp/>
                     </Flex>
                    
                 </Stack>
